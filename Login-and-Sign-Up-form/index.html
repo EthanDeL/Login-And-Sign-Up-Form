@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login & Sign Up Form - ED</title>
+
+    <!-- // LINK CSS // -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- // CDN REMIXICON // -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <!-- // SIGN UP // -->
+    <section class="login" id="signUpSection">
+        <form action="" class="formular">
+
+            <!-- // IMAGE CONTAINER // -->
+            <div class="image-container">
+                <img src="assets/img/5190435.jpg" alt="image login" class="image-login">
+            </div>
+
+            <!-- // INPUT CONTAINER // -->
+            <div class="login-container">
+                <h1 class="title">Create your account</h1>
+
+                <div class="input-container">
+                    <div class="name-container">
+                        <div class="input-content">
+                            <div class="input-wrapper">
+                                <input type="text" name="name" id="name" class="input-login text" placeholder=" ">
+                                <label for="name">Name</label>
+                            </div>
+                        </div>
+                        <div class="input-content">
+                            <div class="input-wrapper">
+                                <input type="text" name="first-name" id="first-name" class="input-login" placeholder=" ">
+                                <label for="first-name">First-name</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-content">
+                        <div class="input-wrapper">
+                            <input type="email" name="email" id="email" class="input-login" placeholder=" ">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="input-content">
+                        <div class="input-wrapper">
+                            <input type="password" name="password" id="password" class="input-login" placeholder=" ">
+                            <label for="password">Password</label>
+                            <i class="ri-eye-line password-toggle" id="togglePassword"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- // BTN LOGIN // -->
+                <div class="bottom-login">
+                    <button type="submit" class="btn-login">Sign up</button>
+
+                    <div class="other-btn-signin">
+
+                        <div class="other-btn-signin-container">
+                            <div class="line"></div>
+                            <p class="text">Or</p>
+                            <div class="line"></div>
+                        </div>
+
+                        <div class="btn-signin">
+                            <a href="#" class="btn google-btn roboto-medium">
+                                <img src="assets/img/chercher.png" alt="Google logo" class="google-logo">
+                                <span>Sign up with Google</span>
+                            </a>
+                            <a href="#" class="btn apple-btn">
+                                <i class="ri-apple-fill"></i>
+                                <span>Sign up with Apple</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- // TEXT // -->
+                    <p class="text">Already have an account?
+                        <a href="#" class="text link" id="showLoginLink">Login</a>
+                    </p>
+                    
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- // LOGIN // -->
+    <section class="login hidden" id="loginSection">
+        <form action="" class="formular">
+
+            <!-- // IMAGE CONTAINER // -->
+            <div class="image-container">
+                <img src="assets/img/8379230.jpg" alt="image login" class="image-login">
+            </div>
+
+              <!-- // INPUT CONTAINER // -->
+              <div class="login-container">
+                <h1 class="title">Welcome Back</h1>
+
+                <div class="input-container">
+                    <div class="input-content">
+                        <div class="input-wrapper">
+                            <input type="email" name="email" id="email" class="input-login" placeholder=" ">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="input-content">
+                        <div class="input-wrapper">
+                            <input type="password" name="password" id="password" class="input-login" placeholder=" ">
+                            <label for="password">Password</label>
+                            <i class="ri-eye-line password-toggle" id="togglePassword"></i>
+                        </div>
+                        <a href="#" class="text text-pwd">Forgot password?</a>
+                    </div>
+                </div>
+                
+                <!-- // BTN LOGIN // -->
+                <div class="bottom-login">
+                    <button type="submit" class="btn-login">Login</button>
+
+                    <div class="other-btn-signin">
+
+                        <div class="other-btn-signin-container">
+                            <div class="line"></div>
+                            <p class="text">Or</p>
+                            <div class="line"></div>
+                        </div>
+
+                        <div class="btn-signin">
+                            <a href="#" class="btn other-btn google-btn roboto-medium">
+                                <img src="assets/img/chercher.png" alt="Google logo" class="google-logo">
+                                <span>Continue with Google</span>
+                            </a>
+                            <a href="#" class="btn other-btn apple-btn">
+                                <i class="ri-apple-fill"></i>
+                                <span>Continue with Apple</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- // TEXT // -->
+                    <p class="text">Don't have an account?
+                        <a href="#" class="text link" id="showSignUpLink">Sign up</a>
+                    </p>
+
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+    <!-- // SCRIPT // -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/password.js"></script>
+    
+</body>
+</html>
