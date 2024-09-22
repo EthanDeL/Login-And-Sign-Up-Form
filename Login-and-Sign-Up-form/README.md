@@ -2,7 +2,7 @@
 
 A modern and responsive login and sign-up form using HTML, CSS, and JavaScript. This project features smooth animations and user-friendly design, perfect for enhancing your web applications or personal portfolio.
 
-<img width="739" alt="preview" src="https://github.com/user-attachments/assets/020d410b-2ff1-4bca-8b64-079bed670b33">
+<img width="829" alt="preview" src="https://github.com/user-attachments/assets/1aea965f-9e73-40ff-bb04-2c8192244b6d">
 
 ## Features
 
