@@ -1,14 +1,17 @@
 // CHANGE TYPE PASSWORD //
 
-const togglePassword = document.querySelector('#togglePassword');
-const password = document.querySelector('#password');
+document.addEventListener('DOMContentLoaded', () => {
+    const togglePasswords = document.querySelectorAll('.password-toggle');
 
-togglePassword.addEventListener('click', function (e) {
-    
-    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-    password.setAttribute('type', type);
+    togglePasswords.forEach(toggle => {
+        toggle.addEventListener('click', function () {
+            const passwordInput = this.parentElement.querySelector('input[type="password"], input[type="text"]');
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
 
-    
-    this.classList.toggle('ri-eye-off-line');
-    this.classList.toggle('ri-eye-line');
+            this.classList.toggle('ri-eye-off-line');
+            this.classList.toggle('ri-eye-line');
+        });
+    });
 });
+
